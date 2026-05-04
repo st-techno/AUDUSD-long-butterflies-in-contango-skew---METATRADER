@@ -1,4 +1,5 @@
 Code Header Block
+
 This top section is like the EA's ID card. It names the file AUDUSD_Butterfly_Options_EA.mq5, adds copyright info, version number, and a description explaining what 
 it does (trades butterfly options with specific risk rules). The #property strict makes the code follow strict MQL5 rules.
 
@@ -8,6 +9,7 @@ Include Libraries Block
 These are like importing tools. Trade.mqh gives functions to place buy/sell orders, check positions, and manage trades automatically.
 
 Input Parameters Block
+
 These are settings users can change in MT5:
 
 Account size: $50K (for calculating position sizes)
@@ -25,6 +27,7 @@ Risk rules: 2:1 profit target, exit if loses 10%
 Drawdown limits: Pause at 10% loss, stop at 15%
 
 Global Variables Block
+
 gPeakEquity: Tracks highest account balance (for drawdown calc)
 
 gPaused: Stops trading during big losses
